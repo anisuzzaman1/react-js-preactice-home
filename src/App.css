@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.Person{
+  background-color:lightgoldenrodyellow;
+  color: crimson;
+  border: 3px solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 15px;
+}
