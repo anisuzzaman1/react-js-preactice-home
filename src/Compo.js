@@ -2,29 +2,29 @@
 import './App.css';
 
 function App() {
-  const nayoks = ['Bappa', 'Rubel', 'Elish'];
-  const nakis = ['Diti', 'Moushumi', 'Rojina'];
-  const cinemas = [
-    { nayok: 'Kuber', naika: 'Kopila' },
-    { nayok: 'Rubel', naika: 'Moushumi' },
-    { nayok: 'Razzak', naika: 'Kabori' },
-  ]
-  return (
-    <div className="App">
-      {
-        cinemas.map(cinema => <Cinema nayok={cinema.nayok} naika={cinema.naika} ></Cinema>)
-      }
-    </div >
-  );
+    const nayoks = ['Bappa', 'Rubel', 'Elish'];
+    const nakis = ['Diti', 'Moushumi', 'Rojina'];
+    const cinemas = [
+        { nayok: 'Kuber', naika: 'Kopila' },
+        { nayok: 'Rubel', naika: 'Moushumi' },
+        { nayok: 'Razzak', naika: 'Kabori' },
+    ]
+    return (
+        <div className="App">
+            {
+                cinemas.map(cinema => <Cinema nayok={cinema.nayok} naika={cinema.naika} ></Cinema>)
+            }
+        </div >
+    );
 }
 
 function Cinema(props) {
-  return (
-    <div className='Person'>
-      <h2>Nayok: {props.nayok}</h2>
-      <h3>Naika: {props.naika}</h3>
-    </div>
-  );
+    return (
+        <div className='Person'>
+            <h2>Nayok: {props.nayok}</h2>
+            <h3>Naika: {props.naika}</h3>
+        </div>
+    );
 }
 
 /* 
