@@ -2,12 +2,14 @@ import React from 'react';
 import './Country.css'
 
 const Country = (props) => {
+    const { name, flag, capital, timezones, nativeName } = props.country;
     return (
-        <div className='container'>
-            <h3>{props.name}</h3>
-            <p>Capital: {props.capital}</p>
-            <p>Time Zone: {props.timezones}</p>
-            <p>Native Name: {props.nativeName}</p>
+        <div className='country'>
+            <h3>{name}</h3>
+            <p><img src={flag}></img></p>
+            <p>Capital: {capital}</p>
+            <p>Time Zone: {timezones[0]}</p>
+            <p>Native Name: {nativeName}</p>
         </div>
     );
 };

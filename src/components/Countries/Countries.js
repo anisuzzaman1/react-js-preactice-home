@@ -10,10 +10,11 @@ const Countries = () => {
             .then(data => setCountries(data));
     }, []);
     return (
-        <div style={{ backgroundColor: '#000', color: '#fff' }}>
-            <h2>List of Countries</h2>
+        <div style={{ backgroundColor: '#000', color: '#fff' }} className="countries">
+            {/* <h2>List of Countries</h2> */}
             {
                 countries.map(country => <Country
+                    country={country}
                     name={country.name}
                     capital={country.capital}
                     timezones={country.timezones[0]}
