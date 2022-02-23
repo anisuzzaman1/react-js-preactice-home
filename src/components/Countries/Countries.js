@@ -14,11 +14,9 @@ const Countries = () => {
             {/* <h2>List of Countries</h2> */}
             {
                 countries.map(country => <Country
+                    key={country.alpha3Code}
                     country={country}
-                    name={country.name}
-                    capital={country.capital}
-                    timezones={country.timezones[0]}
-                    nativeName={country.nativeName}
+
                 ></Country>)
             }
         </div>
